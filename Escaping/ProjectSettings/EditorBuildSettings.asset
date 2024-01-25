@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/bedroom.unity
     guid: de785ca245f57dc47b0cba6c7a5eea75
+  - enabled: 1
+    path: Assets/Scenes/Picture.unity
+    guid: 621352f86c981ab4cab8614d27414658
   m_configObjects: {}

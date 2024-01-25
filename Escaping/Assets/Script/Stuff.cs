@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Stuff : MonoBehaviour
 {
+
+    protected GameObject stuff;
+
+
+
     // Start is called before the first frame update
-    void Start()
+    private void OnMouseDown()
     {
-        
+        delete_self();
     }
 
-    // Update is called once per frame
-    void Update()
+    virtual public Stuff return_self()
     {
-        
+
+
+        return this;
+
     }
+
+    virtual public void delete_self()
+    {
+        Destroy(this);
+    }
+
+
+
+
 }

@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Cup : Stuff
 {
+
+    private string name = "cup";
+    private bool water_fulled=false;
+
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        stuff = GameObject.Find(name);
+        base.stuff = this.stuff;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override Stuff return_self()
     {
-        
+        return base.return_self();
     }
+
+    public override void delete_self()
+    {
+        base.delete_self();
+    }
+
 }

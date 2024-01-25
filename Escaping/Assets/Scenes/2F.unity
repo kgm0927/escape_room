@@ -225,6 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1253540850}
   - component: {fileID: 1253540849}
+  - component: {fileID: 1253540851}
   m_Layer: 0
   m_Name: Move_to_1F
   m_TagString: Untagged
@@ -292,6 +293,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1253540851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253540848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883f573d3c5afde4e9a0f9e933615d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1491841121
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,8 +360,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 456210745
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3e5264cc4829c4546a7d8176a756bc6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -386,6 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003040044}
   - component: {fileID: 2003040043}
+  - component: {fileID: 2003040045}
   m_Layer: 0
   m_Name: Move_to_bedroom
   m_TagString: Untagged
@@ -453,6 +467,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003040045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003040042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196308cbc205ef4daa44f55030ea1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2072120822
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072120824}
   - component: {fileID: 2072120823}
+  - component: {fileID: 2072120825}
   m_Layer: 0
   m_Name: Move_to_bathroom
   m_TagString: Untagged
@@ -530,6 +557,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072120825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072120822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dadbe6dc9267c7418821d10962ba77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
