@@ -25,7 +25,8 @@ public class Stuff : MonoBehaviour
 
     virtual public void delete_self()
     {
-        Destroy(this);
+        Destroy(stuff);
+        
     }
 
 
