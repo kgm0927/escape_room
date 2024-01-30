@@ -8,9 +8,15 @@ public class Move_to_scene : MonoBehaviour
     // Start is called before the first frame update
     protected string scene_name;
 
-    virtual protected void Move_the_Area(string name)
+    virtual public void Move_the_Area(string name)
     {
         SceneManager.LoadScene(name);
+    }
+
+
+    virtual public string Scene()
+    {
+        return scene_name;
     }
 
     private void OnMouseDown()

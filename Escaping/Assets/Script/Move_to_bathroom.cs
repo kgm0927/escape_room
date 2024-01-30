@@ -13,7 +13,7 @@ public class Move_to_bathroom : Move_to_scene
         base.scene_name = scene_name;   
     }
 
-    protected override void Move_the_Area(string name)
+    public override void Move_the_Area(string name)
     {
         base.Move_the_Area(name);
     }

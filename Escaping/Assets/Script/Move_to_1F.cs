@@ -14,7 +14,7 @@ public class Move_to_1F : Move_to_scene
     }
 
     // Update is called once per frame
-    protected override void Move_the_Area(string name)
+    public override void Move_the_Area(string name)
     {
         base.Move_the_Area(name);
     }
