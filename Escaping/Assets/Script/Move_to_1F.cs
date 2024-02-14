@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move_to_1F : Move_to_scene
+public class Move_to_1F : Move_to_scene         // Kitchen æ¿ø° ¡∏¿Á«‘.
 {
     // Start is called before the first frame update
     private new string scene_name = "1F";
-
+ 
 
     private void Awake()
     {
@@ -17,5 +17,6 @@ public class Move_to_1F : Move_to_scene
     public override void Move_the_Area(string name)
     {
         base.Move_the_Area(name);
+        
     }
 }

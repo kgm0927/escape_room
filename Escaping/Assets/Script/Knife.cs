@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Knife : MonoBehaviour
+public class Knife : Stuff
 {
     // Start is called before the first frame update
     void Start()
