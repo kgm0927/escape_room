@@ -20,12 +20,10 @@ public class Room : MonoBehaviour
 
     private void Update()
     {
-       Thread.Sleep(1500);
+   ;
         
         for (int i = 0; i < arounds.Length; i++)
         {
-            Debug.Log(arounds[i]);
-            Debug.Log(arounds[i].exist_return());
             if (!arounds[i].exist_return())
             {
                 Destroy(arounds[i].return_object());
