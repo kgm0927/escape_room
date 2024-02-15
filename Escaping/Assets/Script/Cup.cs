@@ -7,7 +7,7 @@ public class Cup : Stuff
 {
 
     private string name = "cup";
-    private bool water_fulled=false;
+    static private bool water_fulled=false;
    
   
     // Start is called before the first frame update
@@ -28,6 +28,11 @@ public class Cup : Stuff
     {
        
         base.delete_self();
+    }
+
+    public bool water_is_fulled()
+    {
+        return water_fulled;
     }
 
 

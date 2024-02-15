@@ -6,30 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/2F/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/1F.unity
+    path: Assets/Scenes/1F/1F.unity
     guid: f8edd40d25a408b46aeb5197f33e66eb
   - enabled: 1
-    path: Assets/Scenes/2F.unity
+    path: Assets/Scenes/2F/2F.unity
     guid: be6398e97363eb840803b26ba57bbaeb
   - enabled: 1
-    path: Assets/Scenes/bathroom.unity
+    path: Assets/Scenes/2F/bathroom.unity
     guid: e64773ff3ae49b94f80e5165298ee3bf
   - enabled: 1
-    path: Assets/Scenes/Fireplace_room.unity
+    path: Assets/Scenes/1F/Fireplace_room.unity
     guid: 0c89be666f486ce4982ea36aaa1d7eb1
   - enabled: 1
-    path: Assets/Scenes/Kitchen.unity
+    path: Assets/Scenes/1F/Kitchen.unity
     guid: f63c144ddcdfd434f9204f812903bec6
   - enabled: 1
-    path: Assets/Scenes/bedroom.unity
+    path: Assets/Scenes/2F/bedroom.unity
     guid: de785ca245f57dc47b0cba6c7a5eea75
   - enabled: 1
-    path: Assets/Scenes/Mirror.unity
+    path: Assets/Scenes/2F/Knife_paper.unity
+    guid: fcdbb641a375a0f47bd819c31528c093
+  - enabled: 1
+    path: Assets/Scenes/2F/Mirror.unity
     guid: 298deb1e8afb05a4f913263fdcf5dc52
   - enabled: 1
-    path: Assets/Scenes/Picture.unity
+    path: Assets/Scenes/2F/Picture.unity
     guid: 621352f86c981ab4cab8614d27414658
   m_configObjects: {}

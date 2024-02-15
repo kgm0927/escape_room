@@ -5,14 +5,17 @@ using UnityEngine;
 public class Match : Stuff
 {
     // Start is called before the first frame update
-    void Start()
+
+
+    private string name = "Match_in_pocket";
+
+    private void Awake()
     {
-        
+        stuff = GameObject.Find(name);
+        base.stuff = this.stuff;
+        base.room = FindObjectOfType<Room>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
