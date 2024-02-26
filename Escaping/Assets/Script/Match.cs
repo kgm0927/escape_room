@@ -12,7 +12,7 @@ public class Match : Stuff
     private void Awake()
     {
         base.r2 = GetComponent<Rigidbody2D>();
-        base.stuff = base.r2.gameObject; ;
+        base.stuff = base.r2.gameObject; 
         base.room = FindObjectOfType<Room>();
     }
 
