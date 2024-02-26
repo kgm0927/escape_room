@@ -6,6 +6,7 @@ public class Stuff : MonoBehaviour
 {
 
     protected GameObject stuff; // 이걸 파괴해야만 게임 오브젝트가 사라진다.
+    protected Rigidbody2D r2;
     public Room room;
     static public bool exist_or_not = true;
 

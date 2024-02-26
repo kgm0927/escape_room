@@ -14,9 +14,9 @@ public class Paper : Stuff
     // Start is called before the first frame update
     private void Awake()
     {
-        stuff = GameObject.Find(name);
-        base.stuff = this.stuff;
-        move=GetComponent<Move_to_bedroom>();
+        base.r2 = GetComponent<Rigidbody2D>();
+        base.stuff = base.r2.gameObject;
+        move =GetComponent<Move_to_bedroom>();
     }
 
     public override void delete_self()

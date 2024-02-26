@@ -11,8 +11,8 @@ public class Match : Stuff
 
     private void Awake()
     {
-        stuff = GameObject.Find(name);
-        base.stuff = this.stuff;
+        base.r2 = GetComponent<Rigidbody2D>();
+        base.stuff = base.r2.gameObject; ;
         base.room = FindObjectOfType<Room>();
     }
 

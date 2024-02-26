@@ -6,7 +6,7 @@ public class Move_to_Kitchen : Move_to_scene
 {
     // Start is called before the first frame update
     private new string scene_name = "Kitchen";
-    public Cup cup;
+
 
 
 

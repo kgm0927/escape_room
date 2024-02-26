@@ -6,16 +6,16 @@ using UnityEngine;
 public class Cup : Stuff
 {
 
-    private string name = "cup";
+    private new string name = "cup";
     static private bool water_fulled=false;
    
   
     // Start is called before the first frame update
     private void Awake()
     {
-        
-        stuff = GameObject.Find(name);
-        base.stuff = this.stuff;
+
+        base.r2 = GetComponent<Rigidbody2D>();
+        base.stuff = base.r2.gameObject;
         base.room=FindObjectOfType<Room>();
     }
     
