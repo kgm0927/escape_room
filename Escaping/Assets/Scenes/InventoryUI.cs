@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventoryUI : MonoBehaviour
 {
     public GameObject inventoryPanel;
-    bool activeInventory = false;
+    bool activeInventory = true;
 
     private void Start() {
         inventoryPanel.SetActive(activeInventory);
