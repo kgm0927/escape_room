@@ -11,7 +11,7 @@ public class Room : MonoBehaviour
     // 주변에 어디 있는지 알 수 있게 함.
   
 
-
+  
     private void Awake()
     {
     
@@ -49,5 +49,5 @@ public class Room : MonoBehaviour
         // 삭제되도록 함.
         //
     }
-
+   
 }

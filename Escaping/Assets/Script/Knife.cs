@@ -5,7 +5,7 @@ using UnityEngine;
 public class Knife : Stuff
 {
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
         base.r2 = GetComponent<Rigidbody2D>();
         base.stuff = base.r2.gameObject;
@@ -15,5 +15,5 @@ public class Knife : Stuff
     void Update()
     {
         
-    }
+    }*/
 }

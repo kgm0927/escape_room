@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!212 &425536391
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -709,7 +710,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1764155827}
   - {fileID: 366534183}
-  - {fileID: 425536392}
   - {fileID: 1046689220}
   - {fileID: 2097061336}
   - {fileID: 1291263812}
+  - {fileID: 425536392}

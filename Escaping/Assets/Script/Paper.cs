@@ -10,7 +10,7 @@ public class Paper : Stuff
   
     Move_to_bedroom move;
   
-   
+  /* 
     // Start is called before the first frame update
     private void Awake()
     {
@@ -31,5 +31,5 @@ public class Paper : Stuff
     {
         return base.return_self();
     }
-
+  */
 }

@@ -11,12 +11,14 @@ public class Cup : Stuff
    
   
     // Start is called before the first frame update
-    private void Awake()
+  
+     private void Awake()
     {
 
         base.r2 = GetComponent<Rigidbody2D>();
         base.stuff = base.r2.gameObject;
         base.room=FindObjectOfType<Room>();
+        base.spriteRenderer = GetComponent<SpriteRenderer>();
     }
     
     public override Stuff return_self()
@@ -36,7 +38,7 @@ public class Cup : Stuff
     }
 
 
-
+    
 
 
     }

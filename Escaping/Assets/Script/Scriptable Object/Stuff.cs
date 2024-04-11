@@ -1,18 +1,28 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[SerializeField]
 public class Stuff : MonoBehaviour
 {
 
     protected GameObject stuff; // 이걸 파괴해야만 게임 오브젝트가 사라진다.
     protected Rigidbody2D r2;
+    Image image;
     public Room room;
+    public SpriteRenderer spriteRenderer;
     static public bool exist_or_not = true;
 
     // Start is called before the first frame update
 
-  
+    private void Start()
+    {
+        r2 = GetComponent<Rigidbody2D>();
+      
+    }
+
 
 
     private void OnMouseDown()
@@ -44,10 +54,10 @@ public class Stuff : MonoBehaviour
     }
 
 
-   public  bool exist_return()
+    public bool exist_return()
     {
         return exist_or_not;
     }
-  
+
 
 }

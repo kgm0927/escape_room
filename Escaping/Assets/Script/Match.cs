@@ -8,7 +8,7 @@ public class Match : Stuff
 
 
     private string name = "Match_in_pocket";
-
+    /*
     private void Awake()
     {
         base.r2 = GetComponent<Rigidbody2D>();
@@ -17,5 +17,5 @@ public class Match : Stuff
     }
 
     // Update is called once per frame
-   
+   */
 }

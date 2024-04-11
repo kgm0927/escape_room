@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class InventoryUI : MonoBehaviour
 {
+
+
+
+
     public GameObject inventoryPanel;
     bool activeInventory = true;
 
     private void Start() {
         inventoryPanel.SetActive(activeInventory);
+       
+
     }
     private void Update()
     {
@@ -18,4 +25,7 @@ public class InventoryUI : MonoBehaviour
             inventoryPanel.SetActive(activeInventory);
         }
     }
+
+    
+
 }

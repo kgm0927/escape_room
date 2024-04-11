@@ -348,6 +348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ad3186778856a4d8f8756b620a8605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fullCheck: 
+  slots: []
   inventoryPanel: {fileID: 1158458498}
 --- !u!1001 &205380892
 PrefabInstance:
@@ -449,11 +451,80 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980601165518601502, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1013709807628006020, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 205380895}
+    - targetCorrespondingSourceObject: {fileID: 1013709807628006020, guid: d888589192f73554baef1bf706e2f639, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 205380899}
   m_SourcePrefab: {fileID: 100100000, guid: d888589192f73554baef1bf706e2f639, type: 3}
+--- !u!1 &205380894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1013709807628006020, guid: d888589192f73554baef1bf706e2f639, type: 3}
+  m_PrefabInstance: {fileID: 205380892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &205380895
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205380894}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &205380899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205380894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538cafa9b442dc4ebdaa5c7639e0f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDragParent: {fileID: 0}
+  startParent: {fileID: 0}
 --- !u!1001 &267386212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -676,6 +747,7 @@ GameObject:
   - component: {fileID: 422490620}
   - component: {fileID: 422490619}
   - component: {fileID: 422490618}
+  - component: {fileID: 422490621}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -732,7 +804,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 10
+    m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 1
   m_StartCorner: 0
@@ -779,6 +851,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422490616}
   m_CullTransparentMesh: 1
+--- !u!114 &422490621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422490616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ad3186778856a4d8f8756b620a8605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullCheck: 
+  slots: []
+  inventoryPanel: {fileID: 0}
 --- !u!224 &455907356 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5215641372021968017, guid: d888589192f73554baef1bf706e2f639, type: 3}

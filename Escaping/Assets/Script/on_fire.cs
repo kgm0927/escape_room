@@ -10,7 +10,7 @@ public class on_fire : MonoBehaviour
     private bool exist_match = false;
     private bool exist_paper = false;
     
-    private void Awake()
+    /*private void Awake()
     {
         making_fire = new Stuff[2]; 
     }
@@ -64,5 +64,5 @@ public class on_fire : MonoBehaviour
             exist_match = true;
         }
     }
-
+    */
 }

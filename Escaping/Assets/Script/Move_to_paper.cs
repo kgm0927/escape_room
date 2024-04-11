@@ -5,7 +5,7 @@ using UnityEngine;
 public class Move_to_paper : Move_to_scene
 {
     // Start is called before the first frame update
-
+    
 
     private new string scene_name = "Knife_paper";
     private void Awake()
