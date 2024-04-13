@@ -14,13 +14,12 @@ public class IconDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public static GameObject beingDraggedIcon;
     public Slot []slot;
 
-
-    public IconDrag(){
-
+    void Start()
+    {
         Slot[] slots = GameObject.FindObjectsOfType<Slot>();
     }
 
-    
+
     // 슬록이 아닌 다른 오브젝트에 Icon을 드랍할 경우 원상복귀할 위치 백업용
 
     Vector3 startPosition;

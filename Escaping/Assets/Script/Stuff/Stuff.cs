@@ -28,6 +28,7 @@ public class Stuff : MonoBehaviour
     private void OnMouseDown()
     {
         room.check_the_stuff(return_self());
+
         delete_self();
     }
 

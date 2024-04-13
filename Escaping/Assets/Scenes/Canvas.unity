@@ -310,7 +310,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -348,8 +348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ad3186778856a4d8f8756b620a8605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullCheck: 
-  slots: []
   inventoryPanel: {fileID: 1158458498}
 --- !u!1001 &205380892
 PrefabInstance:
@@ -523,6 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7538cafa9b442dc4ebdaa5c7639e0f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slot: []
   onDragParent: {fileID: 0}
   startParent: {fileID: 0}
 --- !u!1001 &267386212
@@ -748,6 +747,7 @@ GameObject:
   - component: {fileID: 422490619}
   - component: {fileID: 422490618}
   - component: {fileID: 422490621}
+  - component: {fileID: 422490622}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -863,9 +863,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ad3186778856a4d8f8756b620a8605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullCheck: 
-  slots: []
   inventoryPanel: {fileID: 0}
+--- !u!114 &422490622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422490616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538cafa9b442dc4ebdaa5c7639e0f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: []
+  onDragParent: {fileID: 0}
+  startParent: {fileID: 0}
 --- !u!224 &455907356 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5215641372021968017, guid: d888589192f73554baef1bf706e2f639, type: 3}

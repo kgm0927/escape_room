@@ -11,10 +11,13 @@ public class InventoryUI : MonoBehaviour
 
     public GameObject inventoryPanel;
     bool activeInventory = true;
+    private Slot[] slots; 
+
+
 
     private void Start() {
         inventoryPanel.SetActive(activeInventory);
-       
+       slots=GameObject.FindObjectsOfType<Slot>();
 
     }
     private void Update()

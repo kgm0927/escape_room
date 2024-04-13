@@ -6,13 +6,14 @@ using UnityEngine.EventSystems;
 public class Slot : MonoBehaviour, IDropHandler
 {// 드랍 이벤트 감지를 위한 상속
 
+    public Stuff stf;
 
-    GameObject Icon()
+    public Stuff Icon()
     {
 
-        if (transform.childCount>0)
-            return transform.GetChild(0).gameObject;
-        else 
+        if (transform.childCount > 0)
+            return stf;
+        else
             return null;
         
     }
