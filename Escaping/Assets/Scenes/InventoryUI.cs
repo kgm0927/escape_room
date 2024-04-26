@@ -9,14 +9,15 @@ public class InventoryUI : MonoBehaviour
 
 
 
-    public GameObject inventoryPanel;
+    public CanvasGroup inventoryPanel;
     bool activeInventory = true;
     private Slot[] slots; 
 
 
 
     private void Start() {
-        inventoryPanel.SetActive(activeInventory);
+        inventoryPanel =GetComponent<CanvasGroup>();
+    
        slots=GameObject.FindObjectsOfType<Slot>();
 
     }
@@ -25,7 +26,9 @@ public class InventoryUI : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.I))
         {
             activeInventory = !activeInventory;
-            inventoryPanel.SetActive(activeInventory);
+            inventoryPanel.interactable = !inventoryPanel.interactable;
+            inventoryPanel.blocksRaycasts = !inventoryPanel.blocksRaycasts;
+            inventoryPanel.alpha = (inventoryPanel.alpha == 1) ? 0 : 1;
         }
     }
 

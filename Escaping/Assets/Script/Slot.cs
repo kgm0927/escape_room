@@ -6,13 +6,20 @@ using UnityEngine.EventSystems;
 public class Slot : MonoBehaviour, IDropHandler
 {// 드랍 이벤트 감지를 위한 상속
 
-    public Stuff stf;
+  private Stuff stf;
 
-    public Stuff Icon()
+    private void Start()
+    {
+        stf = null;
+    }
+
+
+    public GameObject Icon()
     {
 
         if (transform.childCount > 0)
-            return stf;
+            return 
+        transform.GetChild(0).gameObject;
         else
             return null;
         
@@ -21,7 +28,15 @@ public class Slot : MonoBehaviour, IDropHandler
 
     // 이 스크립트가 컴포넌트로 추가 된 게임 오브젝트 RectTransform내에
 
+        public void insert_Stuff(Stuff stf)
+    {
+        this.stf = stf;
+    }
 
+    public Stuff return_the_stuff(Stuff stf)
+    {
+        return stf;
+    }
 
 
     // 포인터 드랍이 발생하면 실행되는 콜백함수.
@@ -30,7 +45,7 @@ public class Slot : MonoBehaviour, IDropHandler
     {
         if (Icon()==null)
         {
-            IconDrag.beingDraggedIcon.transform.SetParent(transform);
+        IconDrag.beingDraggedIcon.transform.SetParent(transform);
             IconDrag.beingDraggedIcon.transform.position = transform.position;
         }
     }
